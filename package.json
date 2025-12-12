@@ -7,6 +7,7 @@
     "build": "next build",
     "export": "next export",
     "postexport": "node fix-paths.js",
+    "vercel-build": "npm run build-static",
     "build-static": "npm run build && npm run export",
     "start": "next start",
     "test": "jest"

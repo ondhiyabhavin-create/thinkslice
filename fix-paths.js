@@ -109,6 +109,24 @@ const outDir = path.join(__dirname, 'out');
 if (fs.existsSync(outDir)) {
   console.log('Fixing paths in HTML files...');
   fixPathsInDirectory(outDir, outDir);
+  
+  // Create a minimal routes-manifest.json for Vercel compatibility
+  const routesManifest = {
+    version: 3,
+    pages: {
+      '/': {},
+      '/404': {},
+      '/admin': {},
+      '/scanner': {},
+      '/search': {},
+      '/view/[id]': {}
+    }
+  };
+  
+  const routesManifestPath = path.join(outDir, 'routes-manifest.json');
+  fs.writeFileSync(routesManifestPath, JSON.stringify(routesManifest, null, 2));
+  console.log('Created routes-manifest.json for Vercel compatibility.');
+  
   console.log('Done! All paths have been converted to relative paths.');
 } else {
   console.error('out directory not found!');
