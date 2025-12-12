@@ -9,20 +9,13 @@ export default function Footer(){
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8"
         >
           <div>
             <h3 className="font-bold text-white mb-2">ThinSLICE</h3>
             <p className="text-sm text-gray-400">Digital thin-section repository for geological research and education</p>
           </div>
-          <div>
-            <h4 className="font-semibold text-white mb-3">Quick Links</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="/search" className="hover:text-accent transition">Browse Samples</a></li>
-              <li><a href="/admin" className="hover:text-accent transition">Guidelines</a></li>
-            </ul>
-          </div>
-          <div>
+          <div className="md:ml-auto md:mr-0">
             <h4 className="font-semibold text-white mb-3">Contact</h4>
             <p className="text-sm text-gray-400 mb-3">
               Jackson School of Geosciences<br />
