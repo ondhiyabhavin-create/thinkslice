@@ -1,0 +1,134 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+*.log
+
+# Next.js build output
+/.next/
+/out/
+.next/
+out/
+
+# Production build
+/build
+/dist
+
+# Misc
+.DS_Store
+*.pem
+*.swp
+*.swo
+*~
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - IntelliJ / WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE - Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# IDE - Vim
+*.swp
+*.swo
+
+# OS - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# OS - Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# OS - Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Archive files (keep source, ignore built archives)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Build scripts output (these are generated)
+out.zip
+
+# Jest
+/coverage
+.nyc_output
+
+# Optional: Keep fix-paths.js but ignore its output
+# (Actually, we want to keep fix-paths.js as it's needed for build)
+
+# Optional: Ignore specific test files if not needed
+# Uncomment if you don't want test files in repo
+# __tests__/
+# *.test.js
+# *.spec.js
+
+# Keep these important files:
+# !package.json
+# !package-lock.json
+# !next.config.js
+# !tailwind.config.js
+# !postcss.config.js
+# !babel.config.js
+# !jest.config.js
+# !README.md
+# !fix-paths.js
+# !build-for-distribution.bat
+# !build-for-distribution.sh
+

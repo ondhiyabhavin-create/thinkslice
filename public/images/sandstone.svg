@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="sandstone-texture" patternUnits="userSpaceOnUse" width="40" height="40">
+      <rect width="40" height="40" fill="#d4a574"/>
+      <circle cx="10" cy="10" r="2.5" fill="#c49564" opacity="0.6"/>
+      <circle cx="25" cy="15" r="2" fill="#e8b887" opacity="0.5"/>
+      <circle cx="35" cy="28" r="2.5" fill="#b89560" opacity="0.7"/>
+      <circle cx="15" cy="35" r="2" fill="#c49564" opacity="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#sandstone-texture)"/>
+  
+  <!-- Stratification -->
+  <rect x="0" y="0" width="800" height="150" fill="#e8b887" opacity="0.2"/>
+  <rect x="0" y="200" width="800" height="100" fill="#b89560" opacity="0.15"/>
+  <rect x="0" y="380" width="800" height="120" fill="#d4a574" opacity="0.1"/>
+  
+  <!-- Cross-bedding effect -->
+  <line x1="0" y1="150" x2="800" y2="170" stroke="#c49564" stroke-width="2" opacity="0.3"/>
+  <line x1="0" y1="300" x2="800" y2="320" stroke="#c49564" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Label -->
+  <text x="400" y="580" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial">SANDSTONE - Permian Basin</text>
+</svg>
